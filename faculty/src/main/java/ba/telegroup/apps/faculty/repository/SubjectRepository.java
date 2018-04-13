@@ -10,4 +10,6 @@ public interface SubjectRepository extends JpaRepository<Subject, Integer>, Subj
 
     public List<Subject> getAllByNameContainsOrderByEctsDesc(String text);
 
+    List<Subject> findAllByIdIsIn(List<Integer> ids);
+
 }
