@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+
+    <persistence-unit name="NewPersistenceUnit">
+        <class>ba.telegroup.apps.faculty.model.Faculty</class>
+        <class>ba.telegroup.apps.faculty.model.FacultyBackup</class>
+        <class>ba.telegroup.apps.faculty.model.Lecture</class>
+        <class>ba.telegroup.apps.faculty.model.Professor</class>
+        <class>ba.telegroup.apps.faculty.model.StudyProgram</class>
+        <class>ba.telegroup.apps.faculty.model.Subject</class>
+        <properties>
+            <property name="toplink.jdbc.url" value="jdbc:mysql://89.111.232.3:54602/faculty_db"/>
+            <property name="toplink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://89.111.232.3:54602/faculty_db"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="openjpa.ConnectionURL" value="jdbc:mysql://89.111.232.3:54602/faculty_db"/>
+            <property name="openjpa.ConnectionDriverName" value="com.mysql.jdbc.Driver"/>
+            <property name="eclipselink.jdbc.url" value="jdbc:mysql://89.111.232.3:54602/faculty_db"/>
+            <property name="eclipselink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+        </properties>
+    </persistence-unit>
+</persistence>
