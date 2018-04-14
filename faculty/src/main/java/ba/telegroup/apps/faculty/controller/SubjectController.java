@@ -40,13 +40,12 @@ public class SubjectController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public Boolean insert(@RequestBody Subject subject) {
+    public Subject insert(@RequestBody Subject subject) {
         try {
-            subjectRepository.saveAndFlush(subject);
-            return true;
+            return subjectRepository.saveAndFlush(subject);
         } catch (Exception ex) {
             ex.printStackTrace();
-            return false;
+            return null;
         }
     }
 
