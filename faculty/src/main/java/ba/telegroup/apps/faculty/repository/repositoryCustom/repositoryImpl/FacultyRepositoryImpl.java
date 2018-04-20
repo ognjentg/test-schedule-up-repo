@@ -7,9 +7,11 @@ import javax.persistence.ParameterMode;
 import javax.persistence.PersistenceContext;
 import javax.persistence.StoredProcedureQuery;
 
+@SuppressWarnings("unused")
 public class FacultyRepositoryImpl implements FacultyRepositoryCustom {
 
     @PersistenceContext
+    private
     EntityManager entityManager;
 
     @Override

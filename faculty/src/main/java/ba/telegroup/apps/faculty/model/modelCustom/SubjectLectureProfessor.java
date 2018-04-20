@@ -7,6 +7,7 @@ import javax.persistence.ConstructorResult;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.SqlResultSetMapping;
 
+@SuppressWarnings("WeakerAccess")
 @SqlResultSetMapping(
         name = "SubjectLectureProfessorMapping",
         classes = @ConstructorResult(
@@ -31,6 +32,7 @@ public class SubjectLectureProfessor extends Subject {
     public SubjectLectureProfessor() {
     }
 
+    @SuppressWarnings("WeakerAccess")
     public SubjectLectureProfessor(Integer id, String name, Integer ects, Integer idLinked, String firstName, String lastName, Integer classNumber) {
         setId(id);
         setName(name);

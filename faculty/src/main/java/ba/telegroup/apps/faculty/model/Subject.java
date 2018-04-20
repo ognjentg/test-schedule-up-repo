@@ -42,7 +42,7 @@ public class Subject {
     }
 
     @Basic
-    @Column(name = "id_linked", nullable = true)
+    @Column(name = "id_linked")
     public Integer getIdLinked() {
         return idLinked;
     }

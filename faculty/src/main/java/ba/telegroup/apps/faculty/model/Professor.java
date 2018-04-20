@@ -43,7 +43,7 @@ public class Professor {
     }
 
     @Basic
-    @Column(name = "salary", nullable = false, precision = 0)
+    @Column(name = "salary", nullable = false)
     public Double getSalary() {
         return salary;
     }

@@ -3,15 +3,14 @@ package ba.telegroup.apps.faculty.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "faculty_backup", schema = "faculty_db", catalog = "")
+@Table(name = "faculty_backup", schema = "faculty_db")
 public class FacultyBackup {
     private Integer id;
     private String name;
     private String address;
 
     @Id
-    @Basic
-    @Column(name = "id", nullable = true)
+    @Column(name = "id")
     public Integer getId() {
         return id;
     }
@@ -21,7 +20,7 @@ public class FacultyBackup {
     }
 
     @Basic
-    @Column(name = "name", nullable = true, length = 45)
+    @Column(name = "name", length = 45)
     public String getName() {
         return name;
     }
@@ -31,7 +30,7 @@ public class FacultyBackup {
     }
 
     @Basic
-    @Column(name = "address", nullable = true, length = 45)
+    @Column(name = "address", length = 45)
     public String getAddress() {
         return address;
     }

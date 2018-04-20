@@ -16,6 +16,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 //        )
 //)
 //@MappedSuperclass
+@SuppressWarnings("unused")
 public class SubjectProfessor extends Subject {
     private String firstName;
     private String lastName;
@@ -30,6 +31,7 @@ public class SubjectProfessor extends Subject {
         this.lastName = lastName;
     }
 
+    @SuppressWarnings("unused")
     public String getFirstName() {
         return firstName;
     }

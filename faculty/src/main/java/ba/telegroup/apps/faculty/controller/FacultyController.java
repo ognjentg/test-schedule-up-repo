@@ -11,8 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class FacultyController {
 
-    @Autowired
+    private final
     FacultyRepository facultyRepository;
+
+    @Autowired
+    public FacultyController(FacultyRepository facultyRepository) {
+        this.facultyRepository = facultyRepository;
+    }
 
     @RequestMapping(value = "/returnSumOfSalary/{facultyId}", method = RequestMethod.GET)
     public Double returnSumOfSalary(@PathVariable Integer facultyId) {

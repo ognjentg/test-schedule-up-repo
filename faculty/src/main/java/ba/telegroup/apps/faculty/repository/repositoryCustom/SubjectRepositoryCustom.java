@@ -1,14 +1,13 @@
 package ba.telegroup.apps.faculty.repository.repositoryCustom;
 
-import ba.telegroup.apps.faculty.model.modelCustom.SubjectLectureProfessor;
 import ba.telegroup.apps.faculty.model.modelCustom.SubjectProfessor;
 
 import java.util.List;
 
 public interface SubjectRepositoryCustom {
 
-    List<SubjectLectureProfessor> getAllExtended();
+    List getAllExtended();
 
-    List<SubjectProfessor> returnSubjectsByProfessor(Integer progessorId);
+    List<SubjectProfessor> returnSubjectsByProfessor(Integer professorId);
 
 }

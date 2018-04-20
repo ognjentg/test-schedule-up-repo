@@ -3,7 +3,7 @@ package ba.telegroup.apps.faculty.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "study_program", schema = "faculty_db", catalog = "")
+@Table(name = "study_program", schema = "faculty_db")
 public class StudyProgram {
     private Integer id;
     private String name;
