@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"ba.telegroup.apps.faculty.controller","l":"SubjectController"}]

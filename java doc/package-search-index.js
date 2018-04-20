@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"ba.telegroup.apps.faculty.controller"}]

@@ -21,16 +21,33 @@ public class SubjectController {
         this.subjectRepository = subjectRepository;
     }
 
+    /**
+     * Get all Subjects
+     *
+     * @return all subjects
+     */
     @RequestMapping(method = RequestMethod.GET)
     public List<Subject> getAll() {
         return subjectRepository.findAll();
     }
 
+    /**
+     * Get subject by id
+     *
+     * @param id subject id
+     * @return subject
+     */
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public Subject getById(@PathVariable Integer id) {
         return subjectRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Not found [" + id + "]"));
     }
 
+    /**
+     * Update subject
+     *
+     * @param subject subject for update
+     * @return true if subject is updated, false if subject is not updated
+     */
     @RequestMapping(method = RequestMethod.PUT)
     public Boolean update(@RequestBody Subject subject) {
         try {
@@ -42,6 +59,12 @@ public class SubjectController {
         }
     }
 
+    /**
+     * Insert new subject
+     *
+     * @param subject new subject for insert
+     * @return inserted subject
+     */
     @RequestMapping(method = RequestMethod.POST)
     public Subject insert(@RequestBody Subject subject) {
         try {
