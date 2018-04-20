@@ -1,0 +1,12 @@
+<service>
+    <id>FacultyApp</id>
+    <name>FacultyApp</name>
+    <description>This is FacultyApp service.</description>
+    <env name="MYAPP_HOME" value="%BASE%"/>
+    <executable>java</executable>
+    <arguments>-Xmx512m -jar "%BASE%\faculty-app.jar"</arguments>
+	<logpath>%BASE%\logs</logpath>
+    <log mode="roll-by-time">
+      <pattern>yyyy-MM-dd</pattern>
+    </log>
+</service>
