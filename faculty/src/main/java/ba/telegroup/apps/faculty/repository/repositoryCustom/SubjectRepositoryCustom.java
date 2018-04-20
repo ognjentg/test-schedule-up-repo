@@ -8,8 +8,8 @@ import java.util.List;
 
 public interface SubjectRepositoryCustom {
 
-    public List<SubjectLectureProfessor> getAllExtended();
+    List<SubjectLectureProfessor> getAllExtended();
 
-    public List<SubjectProfessor> returnSubjectsByProfessor(Integer progessorId);
+    List<SubjectProfessor> returnSubjectsByProfessor(Integer progessorId);
 
 }

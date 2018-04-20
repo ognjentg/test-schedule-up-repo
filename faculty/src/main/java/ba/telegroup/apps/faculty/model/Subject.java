@@ -61,9 +61,7 @@ public class Subject {
         if (id != null ? !id.equals(subject.id) : subject.id != null) return false;
         if (name != null ? !name.equals(subject.name) : subject.name != null) return false;
         if (ects != null ? !ects.equals(subject.ects) : subject.ects != null) return false;
-        if (idLinked != null ? !idLinked.equals(subject.idLinked) : subject.idLinked != null) return false;
-
-        return true;
+        return idLinked != null ? idLinked.equals(subject.idLinked) : subject.idLinked == null;
     }
 
     @Override

@@ -61,9 +61,7 @@ public class Lecture {
             return false;
         if (professorId != null ? !professorId.equals(lecture.professorId) : lecture.professorId != null) return false;
         if (subjectId != null ? !subjectId.equals(lecture.subjectId) : lecture.subjectId != null) return false;
-        if (classNumber != null ? !classNumber.equals(lecture.classNumber) : lecture.classNumber != null) return false;
-
-        return true;
+        return classNumber != null ? classNumber.equals(lecture.classNumber) : lecture.classNumber == null;
     }
 
     @Override

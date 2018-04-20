@@ -50,9 +50,7 @@ public class LecturePK implements Serializable {
             return false;
         if (professorId != null ? !professorId.equals(lecturePK.professorId) : lecturePK.professorId != null)
             return false;
-        if (subjectId != null ? !subjectId.equals(lecturePK.subjectId) : lecturePK.subjectId != null) return false;
-
-        return true;
+        return subjectId != null ? subjectId.equals(lecturePK.subjectId) : lecturePK.subjectId == null;
     }
 
     @Override

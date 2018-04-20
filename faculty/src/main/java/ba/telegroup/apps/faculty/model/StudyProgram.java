@@ -60,9 +60,7 @@ public class StudyProgram {
         if (id != null ? !id.equals(that.id) : that.id != null) return false;
         if (name != null ? !name.equals(that.name) : that.name != null) return false;
         if (level != null ? !level.equals(that.level) : that.level != null) return false;
-        if (facultyId != null ? !facultyId.equals(that.facultyId) : that.facultyId != null) return false;
-
-        return true;
+        return facultyId != null ? facultyId.equals(that.facultyId) : that.facultyId == null;
     }
 
     @Override

@@ -50,9 +50,7 @@ public class Faculty {
 
         if (id != null ? !id.equals(faculty.id) : faculty.id != null) return false;
         if (name != null ? !name.equals(faculty.name) : faculty.name != null) return false;
-        if (address != null ? !address.equals(faculty.address) : faculty.address != null) return false;
-
-        return true;
+        return address != null ? address.equals(faculty.address) : faculty.address == null;
     }
 
     @Override

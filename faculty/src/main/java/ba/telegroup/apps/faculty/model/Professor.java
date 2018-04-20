@@ -62,9 +62,7 @@ public class Professor {
         if (id != null ? !id.equals(professor.id) : professor.id != null) return false;
         if (firstName != null ? !firstName.equals(professor.firstName) : professor.firstName != null) return false;
         if (lastName != null ? !lastName.equals(professor.lastName) : professor.lastName != null) return false;
-        if (salary != null ? !salary.equals(professor.salary) : professor.salary != null) return false;
-
-        return true;
+        return salary != null ? salary.equals(professor.salary) : professor.salary == null;
     }
 
     @Override
