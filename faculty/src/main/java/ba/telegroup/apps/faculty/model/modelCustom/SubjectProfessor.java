@@ -3,11 +3,6 @@ package ba.telegroup.apps.faculty.model.modelCustom;
 import ba.telegroup.apps.faculty.model.Subject;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import javax.persistence.ColumnResult;
-import javax.persistence.ConstructorResult;
-import javax.persistence.MappedSuperclass;
-import javax.persistence.SqlResultSetMapping;
-
 //@SqlResultSetMapping(
 //        name = "SubjectProfessorMapping",
 //        classes = @ConstructorResult(
@@ -25,7 +20,8 @@ public class SubjectProfessor extends Subject {
     private String firstName;
     private String lastName;
 
-    public SubjectProfessor() {}
+    public SubjectProfessor() {
+    }
 
     public SubjectProfessor(String name, Integer ects, String firstName, String lastName) {
         setName(name);

@@ -2,7 +2,9 @@ package ba.telegroup.apps.faculty.repository.repositoryCustom.repositoryImpl;
 
 import ba.telegroup.apps.faculty.repository.repositoryCustom.FacultyRepositoryCustom;
 
-import javax.persistence.*;
+import javax.persistence.EntityManager;
+import javax.persistence.ParameterMode;
+import javax.persistence.PersistenceContext;
 import javax.persistence.StoredProcedureQuery;
 
 public class FacultyRepositoryImpl implements FacultyRepositoryCustom {

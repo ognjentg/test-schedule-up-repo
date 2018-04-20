@@ -28,7 +28,8 @@ public class SubjectLectureProfessor extends Subject {
     private String lastName;
     private Integer classNumber;
 
-    public SubjectLectureProfessor() {}
+    public SubjectLectureProfessor() {
+    }
 
     public SubjectLectureProfessor(Integer id, String name, Integer ects, Integer idLinked, String firstName, String lastName, Integer classNumber) {
         setId(id);
